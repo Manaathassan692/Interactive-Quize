@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Quiz App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Custom Quiz Creator</h1>
+        </header>
+        <div id="question-form">
+            <h2>Create Your Quiz</h2>
+            <form id="create-quiz">
+                <div class="form-group">
+                    <label for="question">Question:</label>
+                    <input type="text" id="question" placeholder="Enter your question" required>
+                </div>
+                <div class="form-group">
+                    <label for="option1">Option 1:</label>
+                    <input type="text" id="option1" placeholder="Enter first option" required>
+                </div>
+                <div class="form-group">
+                    <label for="option2">Option 2:</label>
+                    <input type="text" id="option2" placeholder="Enter second option" required>
+                </div>
+                <div class="form-group">
+                    <label for="option3">Option 3:</label>
+                    <input type="text" id="option3" placeholder="Enter third option" required>
+                </div>
+                <div class="form-group">
+                    <label for="option4">Option 4:</label>
+                    <input type="text" id="option4" placeholder="Enter fourth option" required>
+                </div>
+                <div class="form-group">
+                    <label for="correct-answer">Correct Answer (1-4):</label>
+                    <input type="number" id="correct-answer" min="1" max="4" required>
+                </div>
+                <button type="button" id="add-question">Add Question</button>
+            </form>
+            <button id="start-quiz" style="display: none;">Start Quiz</button>
+        </div>
+        <div id="quiz" style="display: none;">
+            <h2 id="quiz-question"></h2>
+            <ul id="quiz-options"></ul>
+            <button id="next-question">Next Question</button>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="score"></p>
+            <button id="restart-quiz">Restart Quiz</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Custom Quiz App</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
